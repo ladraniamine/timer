@@ -19,7 +19,7 @@ const [second ,setsecond] = useState(0)
       setsecond(Math.floor((datedif % (1000*60 ))/(1000)))
   },1000)
 
-let paper_image = "absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]   w-full h-full z-0";
+let paper_image = "absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]   w-full h-full z-[-1]";
 let time_grid_comtainer = "col-span-3 p-0 lg:p-3";
 let count_nom = "text-md lg:text-xl xl:text-2xl font-bold text-center";
 let count_string = "text-md lg:text-xl xl:text-2xl font-bold text-center";
@@ -40,7 +40,7 @@ let count_string = "text-md lg:text-xl xl:text-2xl font-bold text-center";
         <div className={time_grid_comtainer}>
           <div className='w-full h-full   relative'>
             <img className={paper_image} src={require("../../images/yellow-paper.png")} />
-            <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-1/2 h-1/2 '>
+            <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-1/2 h-1/2 z-[-1]'>
               <p className={count_nom}>{day<10 ? "0"+day:day}</p>
               <p className={count_string}>days</p>
             </div>
@@ -50,7 +50,7 @@ let count_string = "text-md lg:text-xl xl:text-2xl font-bold text-center";
         <div className={time_grid_comtainer}>
           <div className='w-full h-full  relative'>
             <img className={paper_image} src={require("../../images/yellow-paper.png")} />
-            <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-1/2 h-1/2 '>
+            <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-1/2 h-1/2 z-[-1]'>
               <p className={count_nom}>{hour<10 ? "0"+hour:hour}</p>
               <p className={count_string}>hours</p>
             </div>
@@ -60,7 +60,7 @@ let count_string = "text-md lg:text-xl xl:text-2xl font-bold text-center";
         <div className={time_grid_comtainer}>
           <div className='w-full h-full  relative'>
             <img className={paper_image} src={require("../../images/yellow-paper.png")} />
-            <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-1/2 h-1/2 '>
+            <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-1/2 h-1/2 z-[-1]'>
               <p className={count_nom}>{minute<10 ? "0"+minute:minute}</p>
               <p className={count_string}>mins</p>
             </div>
@@ -70,7 +70,7 @@ let count_string = "text-md lg:text-xl xl:text-2xl font-bold text-center";
         <div className={time_grid_comtainer}>
           <div className='w-full h-full  relative'>
             <img className={paper_image} src={require("../../images/yellow-paper.png")} />
-            <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-1/2 h-1/2 '>
+            <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-1/2 h-1/2 z-[-1]'>
               <p className={count_nom}>{second<10 ? "0"+second:second}</p>
               <p className={count_string}>secs</p>
             </div>
